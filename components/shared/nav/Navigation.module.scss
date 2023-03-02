@@ -1,0 +1,39 @@
+@import "/styles/variables.scss";
+@import "/styles/breakpoints.scss";
+
+.nav {
+  background: $white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  padding: 10px;
+  @include bp-tablet-sm {
+    padding: 0px;
+  }
+  img {
+    width: 200px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  a {
+    color: $dark-blue;
+    text-decoration: none;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    &:hover {
+      color: $green;
+    }
+    @include bp-tablet-sm {
+      padding-right: 0px;
+      padding-left: 0px;
+      padding-bottom: 10px;
+    }
+  }
+  button {
+    padding: inherit !important;
+    &:focus,
+    &:hover {
+      background-color: rgba(0, 0, 0, 0) !important;
+      box-shadow: none !important;
+    }
+  }
+}

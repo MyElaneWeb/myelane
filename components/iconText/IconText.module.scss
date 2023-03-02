@@ -1,0 +1,28 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+
+.iconText {
+  .bg {
+    background: $white;
+    padding: 80px;
+    margin-top: 20px;
+    @include bp-tablet-sm {
+      padding: 30px;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      @include bp-tablet-sm {
+        margin: inherit;
+        margin-bottom: 20px;
+      }
+    }
+    h2 {
+      margin-bottom: 60px;
+      @include bp-tablet-sm {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

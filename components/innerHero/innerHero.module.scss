@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+
+.inner-hero {
+  background-image: linear-gradient(to right, $dark-blue, $cyan);
+  padding: 80px 0px 80px 0px;
+  text-align: center;
+  margin-top: 60px;
+  @include bp-tablet-sm {
+    margin-top: 80px;
+    padding: 60px 0px 60px 0px;
+  }
+  h1 {
+    color: $white;
+  }
+  hr {
+    border-top: 1px solid $white;
+    width: 25px;
+    margin: 0 auto;
+    @include bp-tablet-sm {
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+  }
+}
