@@ -1,5 +1,6 @@
 import Head from "next/head";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import Link from "next/link";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import {
   faCircleUser,
   faUtensils,
@@ -12,6 +13,7 @@ import stylesTrusted from "../styles/Trusted.module.scss";
 import stylesSystem from "../styles/System.module.scss";
 import stylesCompare from "../styles/Compare.module.scss";
 import stylesProcess from "../styles/Process.module.scss";
+import stylesOptimize from "../styles/Optimize.module.scss";
 
 import Hero from "../components/hero/Hero";
 import Icon from "../components/icon/Icon";
@@ -34,7 +36,7 @@ export default function Home() {
       <section id="home">
         <Hero
           title="The Time To Own Is Now."
-          subTitle="Say goodbye to outdated, cookie-cutter ordering platforms with sky-high monthly fees and added commissions. Expand your restaurant’s reach and increase your sales with My eLane’s turnkey online ordering system today."
+          subTitle="Say goodbye to outdated, cookie-cutter ordering platforms with sky-high monthly fees and added commissions. We’re now offering you the opportunity to own the same tech used by the largest restaurant chains, along with our industry-leading experience, for a fraction of the cost it takes to develop. "
           btnText="Learn More"
           btnLink="/how-it-works/"
         />
@@ -48,15 +50,15 @@ export default function Home() {
                 <p>
                   Your digital presence is essential to operating a successful
                   and growing business. This means you need to have complete
-                  confidence that your apps run as smoothly as your business,
-                  and showcase your unique brand.
+                  confidence that your mobile experience runs as smoothly as
+                  your business, and showcase your unique brand.
                   <br />
                   <br />
                   My eLane has been revolutionalizing online ordering for over
                   10 years. Our systems are the result of more than a decade of
-                  learning, building, and problem-solving to ensure that you
-                  have access to everything you could need from a mobile
-                  ordering platform.
+                  extensive learning, building, and problem-solving with
+                  big-name franchises ensuring that you have access to
+                  everything you could need from a mobile ordering platform.
                   <br />
                   <br />
                   Fully customizable options allow you to own every aspect of
@@ -75,15 +77,19 @@ export default function Home() {
                   customers?
                   <br />
                   <br />
-                  Take advantage of the online ordering boom with a fast,
+                  Take advantage of our years of experience with a fast,
                   accurate, and user-friendly system that showcases your
                   distinctive business.
+                </p>
+                <p>
+                  Ready for a change? <Link href="/contact/">Click here</Link>{" "}
+                  to get started.
                 </p>
               </Col>
             </Row>
           </Container>
         </section>
-        <section className={stylesTrusted.trusted}>
+        {/* <section className={stylesTrusted.trusted}>
           <Container>
             <Row className="text-center">
               <Col lg="12">
@@ -123,6 +129,51 @@ export default function Home() {
               </Col>
             </Row>
           </Container>
+        </section> */}
+        <section className={stylesOptimize.optimize}>
+          <Container>
+            <Row>
+              <Col lg="12">
+                <h2 className="text-center">
+                  <span>Optimize</span> Your Business
+                </h2>
+              </Col>
+            </Row>
+            <Row>
+              <Col lg="6">
+                <p>
+                  Our all-in-one platform streamlines your business resulting in
+                  more sales, better waste reduction, and increased profits
+                </p>
+                <p>
+                  From the customer → to your POS →to your kitchen → and back.
+                  My eLane seamlessly ensures nothing is missed even on the
+                  busiest of days.
+                </p>
+                <p>
+                  Patented and integrated GPS-triggered orders will even let you
+                  know exactly when an order should be started and delivered so
+                  everything is on time every time.
+                </p>
+              </Col>
+              <Col lg="6">
+                <p>All our Apps include options for:</p>
+                <ul>
+                  <li>Dine In</li>
+                  <li>Take-Out</li>
+                  <li>Drive-Thru</li>
+                  <li>Curbside</li>
+                  <li>Internal Delivery</li>
+                  <li>DoorDash Drive</li>
+                  <li>In Mall Delivery</li>
+                </ul>
+                <p>Never lose an opportunity to serve a new customer again.</p>
+                <Link href="/contact">
+                  <Button>Book a Demo</Button>
+                </Link>
+              </Col>
+            </Row>
+          </Container>
         </section>
         <section className={stylesSystem.system}>
           <Container>
@@ -135,23 +186,43 @@ export default function Home() {
                   icon={safeIcon}
                   iconAlt="safe and secure"
                   heading="Safe and Secure"
-                  text="When you utilize third-party apps, you don’t own the software. They can store information from you, as well as your customers. In the event of a security breach, all of that information can be accessed. Your online safety and security are extremely important to us, which is why with My eLane you have complete control over what information gets stored, as well as integrated security to prevent breaches in the first place. Even with millions of users, we’re proud to say that in over a decade we have had ZERO security breaches."
+                  text={[
+                    "When you utilize third-party apps, you don’t own the software, and they own your data. In the event of planned, or unplanned, downtime and security breaches, you have no control. Your online safety and security are extremely important to us, which is why with My eLane you have complete control over what information gets stored, where it gets stored, and only ",
+                    <strong>you</strong>,
+                    " have access.",
+                    <br />,
+                    <br />,
+                    "Even with millions of users, we’re proud to say that in over a decade we have had ",
+                    <strong>ZERO</strong>,
+                    " security breaches and ",
+                    <strong>ZERO</strong>,
+                    " downtime.",
+                  ]}
                 />
                 <IconText
                   icon={supportIcon}
                   iconAlt="Total Support"
                   heading="Total Support"
-                  text="We can work with your team from start to finish to make sure that there are no gaps in your
-                  service. We set it up, test it, and when everything is perfect- and you’re happy- we publish it. No
-                  long wait times and no emails or calls left unanswered. When you have questions, we have answers."
+                  text={[
+                    " We will work with your team from start to finish to make sure that there are no gaps in your service. We set it up, test it, and when everything is perfect- and you’re happy- we publish it. No long wait times and no emails or calls left unanswered.",
+                    <br />,
+                    <br />,
+                    "When you have questions, we have answers.",
+                    <br />,
+                    <br />,
+                    "Our team knows our software inside and out which makes us the ultimate no-hassle choice for adding features, but you always have the option of hiring your own team to work on it for you- When you own, you have choices.",
+                  ]}
                 />
                 <IconText
                   icon={noOutdatedCodeIcon}
                   iconAlt="No Outdated Code"
                   heading="No Outdated Code"
-                  text="Decades of research and development have gone into My eLane software. We pride
-                  ourselves on staying current and making sure that our systems can handle everything your
-                  business throws at you. This means that our codes are not only modern but perfectly suited to manage thousands of orders a day."
+                  text={[
+                    "Decades of research and development have gone into My eLane software. We pride ourselves on staying current and making sure that our systems can handle everything your business throws at you.",
+                    <br />,
+                    <br />,
+                    "This means that our code is not only modern but perfectly suited to manage thousands of orders a day.",
+                  ]}
                 />
                 <IconText
                   icon={fullyScaleableIcon}
@@ -160,6 +231,16 @@ export default function Home() {
                   text="The problem with many third-party and rentable apps is that you have to re-evaluate
                   your systems as you grow. We’ve accounted for all of that. Our software is designed to grow with you so that you never have to worry about another ordering system ever again. Whether you’re just starting, or have thousands of locations, our software will be there for you every step of the way."
                 />
+              </Col>
+            </Row>
+            <Row>
+              <Col className="text-center p-t-80" lg="12">
+                <h2>
+                  Take <span>Control</span> Of Your Business
+                </h2>
+                <Link href="/contact">
+                  <Button>Get In Touch Today</Button>
+                </Link>
               </Col>
             </Row>
           </Container>
@@ -178,22 +259,19 @@ export default function Home() {
                 <Card>
                   <h4>Them</h4>
                   <ul>
-                    <li>High monthly fees</li>
+                    <li>High monthly fees or sky-high development prices</li>
+                    <li>Development takes years for high-level systems</li>
                     <li>Added commission on top of fees</li>
                     <li>Limited customizability</li>
                     <li>Minimal personal branding</li>
                     <li>Slow, outdated</li>
-                    <li>Third-party hosting (no control)</li>
+                    <li>Third-party hosting (no control!)</li>
                     <li>Potential for fraud is high when data is leaked</li>
-                    <li>
-                      Have to use an outside delivery service like DoorDash
-                    </li>
-                    <li>Very few integrations</li>
-                    <li>Some limit payment methods</li>
+                    <li>Few direct integrations (middleware= extra fees)</li>
                     <li>Confusing promotion integrations</li>
-                    <li>Long wait times if you’re designing your own</li>
+                    <li>Long wait times for custom features</li>
                     <li>Someone else owns your tech (unpredictable)</li>
-                    <li>You don’t truely own anything</li>
+                    <li>You don’t truly own anything</li>
                   </ul>
                 </Card>
               </Col>
@@ -211,24 +289,38 @@ export default function Home() {
                     <li>GPS triggered arrival with ETA</li>
                     <li>No Third-Party</li>
                     <li>
-                      Integrated 3DS 2.0, Kount proprietary fraud tool for
-                      account takeover
+                      Full administration backend panel to access all features
+                    </li>
+                    <li>
+                      Integrates into your payment provider and POS system
+                    </li>
+                    <li>
+                      3D secure for payments and integrated Apple and Google Pay
                     </li>
                     <li>
                       Allow your customers to pay however they choose, including
                       Interac
                     </li>
-                    <li>Choose your own delivery method</li>
                     <li>
-                      Highest quality promotions/coupon engine with available
-                      promo blocking
+                      DoorDash Drive integration or custom delivery methods
                     </li>
-                    <li>Use our in-house development team, or hire your own</li>
+                    <li>Highest quality promotions/coupon engine</li>
+                    <li>
+                      Use our in-house development team, or hire your own to do
+                      custom development
+                    </li>
                     <li>Comprehensive support</li>
                     <li>You own every aspect of your tech</li>
                     <li>And more!</li>
                   </ul>
                 </Card>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="text-center p-t-40" lg="12">
+                <Link href="/contact">
+                  <Button>Request More Information</Button>
+                </Link>
               </Col>
             </Row>
           </Container>
@@ -244,11 +336,12 @@ export default function Home() {
                   In 5 simple steps, My eLane provides you with a no hassle,
                   business-ready ordering system.
                 </p>
+                <p>Once you sign up we:</p>
               </Col>
             </Row>
             <NumberText
               number="1"
-              text="Discuss any custom design and function features you want implemented in order to fulfill your business’s needs."
+              text="Discuss any custom design and function features you want to be implemented in order to fulfill your business’s needs."
             />
             <NumberText
               number="2"
@@ -268,11 +361,14 @@ export default function Home() {
             />
             <p className={stylesProcess.closing}>
               Designing, coding, and implementing your own enterprise quality
-              system takes years, and millions of dollars to create. My eLane
-              has made it our mission to provide all businesses, large and
-              small, with a high quality, lower cost option to help their
-              companies thrive.
+              system takes years, and millions of dollars to create, even with
+              the best developers. My eLane has made it our mission to provide
+              all businesses, large and small, with a high-quality, lower-cost
+              option to help their companies thrive.
             </p>
+            <Link href="/contact">
+              <Button>Get a Quote</Button>
+            </Link>
           </Container>
         </section>
       </section>

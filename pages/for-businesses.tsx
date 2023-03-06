@@ -24,7 +24,8 @@ export default function ForBusinesses() {
               <h2>Enterprise-level software that you’ll own- for less.</h2>
               <p>
                 Advance your business with an elite, customizable ordering
-                platform that will wow users both in-store and at home.
+                platform that will <strong>wow</strong> users both in-store and
+                at home.
                 <br />
                 <br />
                 My eLane delivers a system that offers you more options at a
@@ -39,31 +40,30 @@ export default function ForBusinesses() {
               </p>
               <h3>Let our tech do the work for you.</h3>
               <Link href="/contact">
-                <Button>Request More Information</Button>
+                <Button>Get A Quote</Button>
               </Link>
             </Col>
             <Col lg="6">
               <h2>Businesses We Help</h2>
               <p>
-                <strong>Coffee Shops</strong>
+                <strong>Coffee Chains</strong>
+                <br />
+                Get up to 8x the number of orders out per hour
+              </p>
+              <p>
+                <strong>Fast Casual</strong>
                 <br />
                 Serve more customers with convenient order-ahead app options
               </p>
               <p>
-                <strong>Restaurants</strong>
+                <strong>Traditional Restaurants</strong>
                 <br />
-                Increase your revenue and make deliveries pain-free
+                Compete with QSR chains with ETA-triggered orders
               </p>
               <p>
-                <strong>Fast-Food</strong>
+                <strong>Quick Service Restaurants</strong>
                 <br />
-                Make fast-food faster with My eLane’s GPS-triggered ordering
-                system
-              </p>
-              <p>
-                <strong>Independent Establishments</strong>
-                <br />
-                Keep growing knowing that your needs are covered
+                Make fast-food faster with a GPS-triggered ordering system
               </p>
               <p>
                 <strong>Chains/Franchises</strong>

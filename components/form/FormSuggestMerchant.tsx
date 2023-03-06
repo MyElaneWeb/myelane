@@ -53,7 +53,7 @@ const FormSuggestMerchant = () => {
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
       </FormGroup>
-      <textarea id="message" name="message" placeholder="message" required />
+      <textarea id="message" name="message" placeholder="Message" required />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
       <br />
       <button

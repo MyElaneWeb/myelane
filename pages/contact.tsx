@@ -18,8 +18,11 @@ export default function ContactUs() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <InnerHero
-        title="Thinking of upgrading to an enterprise-level ordering system? Ready to catapult your business into a new sphere of success?
-"
+        title={[
+          "Thinking of upgrading to an enterprise-level ordering system?",
+          <br />,
+          "Ready to catapult your business into a new sphere of success?",
+        ]}
       />
       <section className="inner-content">
         <Container>
