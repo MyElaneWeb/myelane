@@ -7,7 +7,7 @@ interface Props {
   icon: any;
   iconAlt: string;
   heading: string;
-  text: string;
+  text: any;
 }
 
 const IconText: React.FC<Props> = ({ icon, iconAlt, heading, text }) => {

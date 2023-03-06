@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import styles from "../innerHero/innerHero.module.scss";
 
 interface Props {
-  title: string;
+  title: any;
 }
 
 const InnerHero: React.FC<Props> = ({ title }) => {
