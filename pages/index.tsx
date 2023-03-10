@@ -50,7 +50,6 @@ export default function Home() {
                   src="https://www.youtube.com/embed/T1mViqQhcvs"
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
                 ></iframe>
               </Col>
               <Col lg="6">
