@@ -44,7 +44,15 @@ export default function HowItWorks() {
               </p>
             </Col>
             <Col lg="6">
-              <h2 className="text-center">Need Image</h2>
+              <iframe
+                width="100%"
+                height="450"
+                src="https://www.youtube.com/embed/AbAK5hdBQVk"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </Col>
           </Row>
           <Row className="p-t-40">
@@ -73,6 +81,16 @@ export default function HowItWorks() {
                 only increased revenue and a smoother-running kitchen, but your
                 customer's user experience will be second to none.
               </p>
+              <p>
+                With designated start times for each order, your customers will
+                receive the right order on time, so you’ll never have to throw
+                out products that were made too early, or have unhappy customers
+                waiting longer for their food.
+                <br />
+                <br />
+                In the digital world, convenience is key- so make your franchise
+                the go-to choice for your customers with My eLane.
+              </p>
             </Col>
             <Col lg="6">
               <ul>
@@ -88,20 +106,6 @@ export default function HowItWorks() {
                 </li>
                 <li>You are notified when each order should be prepped. </li>
               </ul>
-            </Col>
-          </Row>
-          <Row className="text-center">
-            <Col lg="12">
-              <p>
-                With designated start times for each order, your customers will
-                receive the right order on time, so you’ll never have to throw
-                out products that were made too early, or have unhappy customers
-                waiting longer for their food.
-                <br />
-                <br />
-                In the digital world, convenience is key- so make your franchise
-                the go-to choice for your customers with My eLane.
-              </p>
               <Link href="/contact">
                 <Button>Request More Information</Button>
               </Link>

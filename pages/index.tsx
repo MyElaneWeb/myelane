@@ -44,7 +44,14 @@ export default function Home() {
           <Container>
             <Row className="align-items-center">
               <Col lg="6">
-                <h2>Video</h2>
+                <iframe
+                  width="100%"
+                  height="450"
+                  src="https://www.youtube.com/embed/T1mViqQhcvs"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
               </Col>
               <Col lg="6">
                 <p>
